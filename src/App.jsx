@@ -50,7 +50,6 @@ class App extends React.Component {
 	};
 
 	clearTodos = () => {
-		console.log('cleared');
 		const newTodos = this.state.todos.filter(
 			(todo) => todo.completed === false
 		);
@@ -59,13 +58,26 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<h2>Things ToDo</h2>
-				{this.state.todos.length === 0 ? (
-					<h2>Add Your First Task Below</h2>
-				) : (
-					<TodoList todos={this.state.todos} toggleTask={this.toggleTask} />
-				)}
+			<div className='container'>
+				<div>
+					<div>
+						<h1>Things ToDo</h1>
+					</div>
+					<div>
+						{this.state.todos.length === 0 ? (
+							<div>
+								<h2>Add Your First Task</h2>
+							</div>
+						) : (
+							<div>
+								<TodoList
+									todos={this.state.todos}
+									toggleTask={this.toggleTask}
+								/>
+							</div>
+						)}
+					</div>
+				</div>
 
 				<TodoForm addTask={this.addTask} clearTodos={this.clearTodos} />
 			</div>
