@@ -8,9 +8,13 @@ body {
 
 .container {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	height: 100%;
+}
+
+.list-container {
+	width: 50%;
 }
 
 .form {
@@ -26,4 +30,8 @@ body {
 
 .true {
 	text-decoration: line-through;
+}
+
+h2 {
+	color: #a9d884;
 }

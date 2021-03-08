@@ -20,6 +20,7 @@ class TodoForm extends React.Component {
 	}
 
 	handleChange = (e) => {
+		// Disables submit button if input is empty
 		!e.target.value
 			? this.setState({ [e.target.name]: e.target.value, disabled: true })
 			: this.setState({ [e.target.name]: e.target.value, disabled: false });
@@ -39,6 +40,7 @@ class TodoForm extends React.Component {
 		this.props.clearTodos();
 	};
 
+	// Form Styling Props
 	paperStyle = {
 		padding: 20,
 		height: 'auto',
@@ -56,6 +58,7 @@ class TodoForm extends React.Component {
 		marginTop: '10px',
 		backgroundColor: '#A9D884',
 	};
+	// End of Form Styling Props
 
 	render() {
 		return (
