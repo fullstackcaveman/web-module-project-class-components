@@ -56,8 +56,9 @@ class App extends React.Component {
 		return (
 			<div className='container'>
 				<div className='list-container'>
-					<div>
+					<div className='header'>
 						<h1>Things ToDo</h1>
+						<h6>(Click on a task to mark it as Completed)</h6>
 					</div>
 					<div>
 						{this.state.todos.length === 0 ? (
