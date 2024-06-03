@@ -1,0 +1,53 @@
+#root {
+	height: 100vh;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.list-container {
+	width: 50%;
+}
+
+.form {
+	display: flex;
+	padding: 10px;
+	height: auto;
+}
+
+.form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.true {
+	text-decoration: line-through;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: #a9d884;
+}
+
+h6 {
+	margin: 0;
+	margin-bottom: 20px;
+}
